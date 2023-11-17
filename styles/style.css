@@ -46,10 +46,20 @@ body {
     flex: 1;
     padding: 20px;
 }
-#sidebar {
-    width: 100%;
-    background-color: darkslategrey;
-    color: white;
-    padding: 20px;
-        
+#main {
+    margin-right: 15%;
+}
+
+#wrapper {
+    width: 600px; 
+    margin: 15px auto; 
+    position: relative; 
+}
+
+#sidebar { 
+    width: 15%; 
+    height: 100%;
+    position: fixed; 
+    margin-left: 85%;
+    background-color: slategray; 
 }
