@@ -74,6 +74,7 @@ function displayCanvas(canvas) {
     const drawnCanvasContainer = document.getElementById('drawnCanvas');
     
     // Append the dynamically created canvas to the container
+    // TODO: check if image is particularly large, (larger than screen) and resize it if (drawnCanvasContainer >= devices screen) 
     drawnCanvasContainer.width = canvas.width;
     drawnCanvasContainer.height = canvas.height;
     drawnCanvasContainer.getContext('2d').drawImage(canvas, 0, 0);
