@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seed Selector</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+   <input type="file" id="imageInput" accept="image/*">
+    <br>
+    X: <input type="number" id="xInput" min="0">
+    Y: <input type="number" id="yInput" min="0">
+    <button id="sendToTarotButton">Send to Tarot</button>
+    <div id="colorResult"></div>
+    <div id="drawnCanvasContainer">
+        <canvas id="drawnCanvas"></canvas>
+    </div>
+    <!-- hidden field for storing data -->
+    <input type="hidden" id="hiddenSeedInput">
+    <script src="js/colorpicker.js"></script>
+</body>
+</html>

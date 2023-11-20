@@ -14,6 +14,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    padding: 1%;
 }
 
 .header-container {
@@ -64,4 +65,23 @@ body {
     margin-left: 85%;
     background-color: slategray; 
     overflow-wrap: break-word;
+}
+.blogcard {
+    width: 15%;
+    height: 35%;
+}
+
+input, button {
+    margin: 5px;
+}
+#drawnCanvasContainer {
+    max-width: 100%; /* Ensure the canvas container doesn't exceed the width of its parent */
+    margin: auto;    /* Center the canvas container */
+}
+
+#drawnCanvas {
+    display: block;  /* Remove any extra space below the canvas */
+    width: 100%;     /* Make the canvas take the full width of its container */
+    height: auto;    /* Maintain the aspect ratio of the canvas */
+    border: 1px solid #ccc; /* Optional: Add a border for visibility */
 }
