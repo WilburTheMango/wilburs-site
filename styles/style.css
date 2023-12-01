@@ -1,7 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Ubuntu:ital,wght@0,300;0,700;1,300&display=swap');
+@font-face {
+    font-family: 'Terminus (TTF)';
+    src: url('../font/TerminusTTF.woff2') format('woff2'),
+        url('../font/TerminusTTF.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 * {
-    font-family: Ubuntu, monospace, sans-serif;
+    font-family: 'Terminus (TTF)';
+    font-weight: 500;
+    font-style: normal;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -17,6 +28,9 @@ body {
     padding: 1%;
 }
 
+p {
+    font-size: 150%;
+}
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -35,12 +49,18 @@ body {
 }
 
 .header-container nav ul li {
-    margin-right: 20px;
+    margin-right: 30px;
 }
 
 .header-container nav a {
+    padding: .8em;
     color: yellowgreen;
     text-decoration: none;
+    border: 1px solid white;
+}
+.header-container nav a:hover {
+    color: white;
+    border: 1px dotted yellowgreen;
 }
 
 .content {
@@ -60,13 +80,23 @@ body {
 #sidebar { 
     color: white;
     width: 15%; 
-    height: 100%;
+    height: 85%;
     position: fixed; 
-    margin-left: 85%;
+    margin-left: 84.02%;
     margin-right: 1%;
     background-color: slategray; 
     overflow-wrap: break-word;
+    border: 2px solid white;
+    display: block;
+    overflow: hidden; 
 }
+
+#toggleSidebar {
+    margin-left: 99%;
+    border: 1px solid white;
+    padding: 0.2%;
+}
+
 .blogcard {
     width: 15%;
     height: 35%;
