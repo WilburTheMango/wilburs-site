@@ -1,13 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Wilbur's Blog</title>
+    <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
-    <div class="blogcard">
-        
+    <header>
+        <div class="header-container">
+            <h1>Wilbur's Cool Blog</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="wrapperBlog">
+        <aside id="sidebar">
+            <script>
+                fetch('./sidebar.html')
+                    .then(response => response.text())
+                    .then(html => {
+                        document.getElementById("sidebar").innerHTML = html;
+                    });
+            </script>
+            <!-- this embeds the sidebar.html html into the webpage, allowing consistency across all pages -->
+        </aside>
+        <!-- sidebar always comes first -->
+        <div id="main-projects">
+        <div class="cardMini">
+            <a href="blogposts/blogpost12-1-23.html"><img src="images/beastieblogs.png" alt="Beastie Blogs!"></a>
+            <p>A BLOG POST!</p>
+        </div>
+        <div class="cardMini">
+            <a href="blogposts/blogpost12-1-23.html"><img src="images/beastieblogs.png" alt="Beastie Blogs!"></a>
+            <p>A BLOG POST!</p>
+        </div>
+        <div class="cardMini">
+            <a href="blogposts/blogpost12-1-23.html"><img src="images/beastieblogs.png" alt="Beastie Blogs!"></a>
+            <p>A BLOG POST!</p>
+        </div>
+        <div class="cardMini">
+            <a href="blogposts/blogpost12-1-23.html"><img src="images/beastieblogs.png" alt="Beastie Blogs!"></a>
+            <p>A BLOG POST!</p>
+        </div>
     </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </body>
+
 </html>

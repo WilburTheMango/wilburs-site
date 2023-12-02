@@ -17,11 +17,7 @@ jQuery('document').ready(function(){
     // })
 
     var typed = new Typed('#welcome', {
-        strings: ['<h1>Welcome to my website!</h1>', '<h1>Enjoy your stay!</h1>', '<h1>Check out my recent projects! ---></h1>'],
-        typeSpeed: 25,
-        loop: true,
-    });
-    $("#toggleSidebar").click(function () {
-        $("#sidebar").slideToggle(500);
+        strings: ['Welcome to my website!', 'Enjoy your stay!', 'Check out my recent projects! --->'],
+        typeSpeed: 50,
     });
 })

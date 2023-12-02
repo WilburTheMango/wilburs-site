@@ -27,25 +27,31 @@
 
     <div class="wrapper">
         <aside id="sidebar">
-            <iframe src="sidebar.html" width="100%" height="100%" frameborder="0"></iframe>
+            <script>
+                fetch('./sidebar.html')
+                    .then(response => response.text())
+                    .then(html => {
+                        document.getElementById("sidebar").innerHTML = html;
+                    });
+            </script>
             <!-- this embeds the sidebar.html html into the webpage, allowing consistency across all pages -->
         </aside>
         <div id="main-projects">
             <!-- <p>Welcome to my projects!</p> -->
             <!-- <br> -->
-            <div class="card">
+            <div class="cardMini">
                 <a href="tarotseedselector.html">
                     <img src="images/tarot/00-TheFool.png" alt="The coolest project.">
                     A tarot card spread program, that uses randomness determined by an image you choose!
                 </a>
             </div>
-            <div class="card">
+            <div class="cardMini">
                 <a href="tarotseedselector.html">
                     <img src="images/tarot/00-TheFool.png" alt="The coolest project.">
                     A tarot card spread program, that uses randomness determined by an image you choose!
                 </a>
             </div>
-            <div class="card">
+            <div class="cardMini">
                 <a href="tarotseedselector.html">
                     <img src="images/tarot/00-TheFool.png" alt="The coolest project.">
                     A tarot card spread program, that uses randomness determined by an image you choose!

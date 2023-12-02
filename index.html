@@ -26,15 +26,20 @@
     </header>
 
     <div class="wrapper">
-        <button id="toggleSidebar">&#8593;</button>
         <aside id="sidebar">
-            <iframe src="sidebar.html" width="100%" height="100%" frameborder="0"></iframe>
+            <script>
+                fetch('./sidebar.html')
+                    .then(response => response.text())
+                    .then(html => {
+                        document.getElementById("sidebar").innerHTML = html;
+                    });
+            </script>
             <!-- this embeds the sidebar.html html into the webpage, allowing consistency across all pages -->
         </aside>
         <div id="main">
             <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
             <span id="welcome"></span>
-            
+
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
