@@ -62,19 +62,16 @@ p {
     color: white;
     border: 1px dotted yellowgreen;
 }
-
+.wrapper {
+    background-color: #232823;
+    height: 49.65em;
+}
 .content {
     flex: 1;
     padding: 20px;
 }
 #main {
     margin-right: 15%;
-}
-
-#wrapper {
-    width: 600px; 
-    margin: 15px auto; 
-    position: relative; 
 }
 .wrapperBlog {
     width: 75%;
@@ -172,8 +169,4 @@ input, button {
     bottom: 0;
     left: 0;
     right: 0;
-}
-.wrapper {
-    background-color: #232823;
-    height: 49.65em;
 }
