@@ -173,3 +173,7 @@ input, button {
     left: 0;
     right: 0;
 }
+.wrapper {
+    background-color: #232823;
+    height: 49.65em;
+}
