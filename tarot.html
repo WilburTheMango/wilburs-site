@@ -1,16 +1,51 @@
+</body>
+</html>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <script>
-        const urlParams = new URLSearchParams(window.location.search);
-        const seed = urlParams.get('seed');
-        
-    </script>
+    <title>Wilbur's Site</title>
+    <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
-    
+    <header>
+        <div class="header-container">
+            <h1>Tarot Reading</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><u style="color: red;">H</u>ome</a></li>
+                    <li><a href="blog.html"><u style="color: red;">B</u>log</a></li>
+                    <li><a href="projects.html"><u style="color: red;">P</u>rojects</a></li>
+                    <li><a href="about.html"><u style="color: red;">A</u>bout Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <aside id="sidebar">
+            <script>
+                fetch('./sidebar.html')
+                    .then(response => response.text())
+                    .then(html => {
+                        document.getElementById("sidebar").innerHTML = html;
+                    });
+            </script>
+            <!-- this embeds the sidebar.html html into the webpage, allowing consistency across all pages -->
+        </aside>
+        
+        <div id="main">
+            <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+            <span id="welcome"></span>
+
+        </div>
+    </div>
+    <script src="js/tarotscript.js"></script>
 </body>
+
 </html>
